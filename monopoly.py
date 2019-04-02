@@ -64,13 +64,20 @@ chance_deck =
 
 community_deck =
     [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        ["Get out of jail free. This card may be kept until needed or sold"],
+        ["From sale of stock, you get $45"],
+        ["Grand opera opening. Collect $50 from every player for opening night seats"],
+        ["Advance to Go, collect $200"],
+        ["Xmas fund matures, collect $100"],
+        ["Go directly to jail. Do not pass Go. Do not collect $200"],
+        ["Life insurance matures, collect $200"],
+        ["You are assessed for street repairs. $40 per house, $115 per hotel"],
+        ["Pay hospital $100"],
+        ["Income tax refund, collect $20"],
+        ["Doctor's fee, pay $50"],
+        ["You inherit $100"],
+        ["Pay school tax of $150"],
+        ["Receive for services $25"],
+        ["Bank error in your favor, collect $200"],
+        ["You have won second prize in a beauty contest, collect $10"]
     ]
