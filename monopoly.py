@@ -3,31 +3,62 @@ import random
 class Monopoly:
     def __init__(self):
         pass
-
     def start(self):
         pass
-
     def check_win(self):
         pass
-
     def take_turn(self):
         pass
     def roll_and_move(self):
         pass
-    
     def buy_property(self):
         pass
     def auction_property(self):
         pass
-
     def go_to_jail(self):
         pass
-
     def draw_chance_card(self):
         pass
     def draw_community_card(self):
         pass
 
+
+class Board_space:
+    def __init__(self, name, info):
+        self.category = category
+        self.name = name
+        self.info = info
+
+
+class Property:
+    def __init__(self,color, price, 
+                 rent, one_house_rent, two_house_rent,
+                 three_house_rent, four_house_rent, hotel_rent,
+                 house_cost, hotel_cost):
+        self.color = color
+        self.price = price
+        self.rents = {one_house:one_house_rent,
+                      two_house:two_house_rent,
+                      three_house:three_house_rent,
+                      four_house:four_house_rent,
+                      hotel:hotel_rent}
+        self.costs = {house:house_cost,
+                      hotel:hotel_cost}
+
+
+game_board = [
+    [ [],[],[],[],[],[],[],[],[],[],[] ],
+    [ [],                           [] ],
+    [ [],                           [] ],
+    [ [],                           [] ],
+    [ [],                           [] ],
+    [ [],                           [] ],
+    [ [],                           [] ],
+    [ [],                           [] ],
+    [ [],                           [] ],
+    [ [],                           [] ],
+    [ [],[],[],[],[],[],[],[],[],[],[] ]
+]
 
 chance_deck = {
         1:"You have been elected chairman of the board, pay each player $50",
@@ -73,38 +104,3 @@ community_deck = {
         15:"Bank error in your favor, collect $200",
         16:"You have won second prize in a beauty contest, collect $10"
     }
-
-class board_space:
-    def __init__(self, name, info):
-        self.category = category
-        self.name = name
-        self.info = info
-
-class property:
-    def __init__(self,color, price, 
-                 rent, one_house_rent, two_house_rent,
-                 three_house_rent, four_house_rent, hotel_rent,
-                 house_cost, hotel_cost):
-        self.color = color
-        self.price = price
-        self.rents = {one_house:one_house_rent,
-                      two_house:two_house_rent,
-                      three_house:three_house_rent,
-                      four_house:four_house_rent,
-                      hotel:hotel_rent}
-        self.costs = {house:house_cost,
-                      hotel:hotel_cost}
-
-game_board = [
-    [ [],[],[],[],[],[],[],[],[],[],[] ],
-    [ [],                           [] ],
-    [ [],                           [] ],
-    [ [],                           [] ],
-    [ [],                           [] ],
-    [ [],                           [] ],
-    [ [],                           [] ],
-    [ [],                           [] ],
-    [ [],                           [] ],
-    [ [],                           [] ],
-    [ [],[],[],[],[],[],[],[],[],[],[] ]
-]
